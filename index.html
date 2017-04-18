@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>类微信公众号自定义菜单</title>
+		
+		<link rel="stylesheet" href="js/jquery-ui.min.css" />
+		<script src="js/jquery-3.1.0.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
+		<link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+		<script src="js/myfunction.js"></script>
+				
+	</head>
+	<body>
+		<div id="custom-menu">
+			<div id="custom-menu-head">
+				<p>自定义菜单</p>
+				<a href="#" id="instructions" target="_blank">
+					使用说明<i class="icon_instructions"></i>
+				</a>
+			</div>
+			<div id="custom-menu-body">
+				<div class="menu_initial_page">
+					<p class="tips_for_add_menu">您尚未添加任何菜单</p>
+					<a class="btn_for_add_menu" href="javascript:void(0);">
+						<i class="icon_for_btn_add_menu"></i>
+						添加菜单</a>
+				</div>
+				<div class="menu_setting_page">
+					<div class="menu_body_status_box" id="menustatus-1">
+						<i class="icon_for_menustatus-1"></i>
+						<p class="menustatus_title">菜单编辑中</p>
+						<p class="status_details">
+							菜单未发布，请确认菜单编辑完成后点击“保存并发布”同步到手机。若停用菜单，请
+							<a href="###">点击这里</a>
+						</p>
+					</div>
+					<div class="menu_setting_area">
+						<div class="menu_preview_area">  <!--左-->
+							<div class="menu_preview">
+								<div class="munu_preview_head">PNIDEMOOO</div>
+								<div class="menu_preview_body">
+									<ul class="bottom_menu_list">
+										
+										<li id="menu_item_add_size1" class="menu_item_size1">
+											<a href="javascript:void(0);" class="menu_item" title="最多添加3个一级菜单" draggable="false">
+													<i id="green_add_icon" class="menu_item_add_icon"></i>
+													<span>添加菜单</span>		
+											</a>
+										</li>
+										
+										<li id="menu_item_add_size2" class="menu_item_size2">
+											<a href="javascript:void(0);" class="menu_item" title="最多添加3个一级菜单" draggable="false">
+												<i class="menu_item_add_icon"></i>
+											</a>
+										</li>
+										
+										<li id="menu_item_add_size3" class="menu_item_size3">
+											<a href="javascript:void(0);" class="menu_item" title="最多添加3个一级菜单" draggable="false">
+												<i class="menu_item_add_icon"></i>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="sort_btn_group">
+								<a id="sort_disabled" class="btn btn_disabled" style="display: none;">菜单排序</a>
+								<a id="sort" class="btn btn_default" href="javascript:void(0);">菜单排序</a>
+								<a id="sort_finished" class="btn btn_default" href="javascript:void(0);" style="display: none;">完成</a>
+							</div>
+						</div>
+						<div class="menu_form_area"> <!--右-->
+							<div class="tips_for_sort" style="display: none;">请通过拖拽左边的菜单进行排序</div>
+							<div class="edit_box">
+								<div class="edit_box_square">
+									<div class="edit_box_square_title">
+										<span class="menu_name1">菜单名称</span>
+										<a id="delete_menu" href="javascript:void(0);">删除菜单</a>
+									</div>
+									<div class="only_menu_name">
+										<p>已添加子菜单，仅可设置菜单名称。</p>
+										<div class="menu_name">
+											<label class="menu_title_label">菜单名称</label>
+											<div class="menu_name_content">
+												<span><input class="input_menu_name" id="input_menu_name1" type="text" value="菜单名称" /></span>
+												<p class="tips3_for_menu_title">字数超过上限</p>
+												<p class="tips2_for_menu_title">请输入菜单名称</p>
+												<p class="tips1_for_menu_title">字数不超过4个汉字或8个字母</p>
+											</div>									
+										</div>
+									</div>
+									<div class="not_only_menu_name">
+										<div class="menu_name">
+											<label class="menu_title_label">菜单名称</label>
+											<div class="menu_name_content">
+												<span><input class="input_menu_name" id="input_menu_name2" type="text" value="菜单名称" /></span>
+												<p class="tips3_for_menu_title">字数超过上限</p>
+												<p class="tips2_for_menu_title">请输入菜单名称</p>
+												<p class="tips1_for_menu_title">字数不超过4个汉字或8个字母</p>
+											</div>
+										</div>
+										<div class="menu_content">
+											<div class="menu_content_control_group">
+												<label class="menu_content_label">菜单内容</label>
+												<div class="sendMsg_or_jumpPage">
+													<label class="sendMsg selected">
+														<i class="radio_icon"></i>
+														<span class="sendMsg_label">发送消息</span>
+														<input type="radio" class="frm_radio">
+													</label>
+													<label class="jumpPage">
+														<i class="radio_icon"></i>
+														<span class="jumpPage_label">跳转页面</span>
+														<input type="radio" class="frm_radio">
+													</label>
+												</div>
+												<div class="menu_content_container">
+													<div class="menu_content_sendMsg">
+														<div class="sendMsg_square">
+															<div class="sendMsg_head">
+																<ul class="sendMsg_nav">
+																	<li> 
+																		<a href="javascript:void(0);">
+																			<i class="sendMsg_icon1"></i>
+																			<span class="msg_tab_title">图文消息</span>
+																		</a>													
+																	</li>
+																	<li>
+																		<a href="javascript:void(0);">
+																			<i class="sendMsg_icon2"></i>
+																			<span class="msg_tab_title">图片</span>
+																		</a>
+																	</li>
+																	<li>
+																		<a href="javascript:void(0);">
+																			<i class="sendMsg_icon3"></i>
+																			<span class="msg_tab_title">语音</span>
+																		</a>
+																	</li>
+																	<li>
+																		<a href="javascript:void(0);">
+																			<i class="sendMsg_icon4"></i>
+																			<span class="msg_tab_title">视频</span>
+																		</a>
+																	</li>
+																</ul>
+															</div>
+															<div class="sendMsg_body"></div>
+														</div>
+													</div>
+													<div class="menu_content_jumpPage">
+														<form>
+															<p class="tips_for_jumpPage">订阅者点击该子菜单会跳到以下链接</p>
+														</form>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+								</div>
+								<div class="edit_box_arrow_wrap">
+									<i class="edit_box_arrow edit_box_arrow_out"></i>
+									<i class="edit_box_arrow edit_box_arrow_in"></i>
+								</div>
+							</div>
+						</div>
+						<div class="btn_group_for_publish">  <!--发布预览-->
+							<button id="save_and_publish" class="btn btn_default">保存并发布</button>
+							<button class="btn btn_default">预览</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<li id="menu_item_MR" class="menu_item_sizeall" style="display: none;">
+			<a href="javascript:void(0);" class="menu_item" draggable="false">
+				<i class="sub_menu_small_icon"></i>
+				<i class="sort_icon"></i>
+				<span>菜单名称</span>
+			</a>
+			<div id="sub_menu_no_x" class="sub_menu_display">
+				<ul class="sub_menu_list" draggable="false">
+					<li id="moren_sub_menu_item" class="sub_menu_item_sizeall" style="display: none;">
+						<a href="javascript:void(0);" class="sub_menu_item"  draggable="false">
+							<span>
+								<i class="sort_icon"></i>
+								<span class="p-style">子菜单</span>
+							</span>
+						</a>
+					</li>
+					<li class="sub_menu_item_add_box">
+						<a href="javascript:void(0);" class="sub_menu_item_add" title="最多添加5个子菜单" draggable="false">
+							<span><i class="sub_menu_item_add_icon"></i></span>
+						</a>
+					</li>
+				</ul>												
+			</div>
+		</li>
+		
+		<div class="mask" style="display: none;"></div>
+ 		<!-- 删除对话框  -->
+		<!--<div class="dialog" style="left: 503px; top: 245.5px; display: none;">-->
+		<div class="dialog" style="display: none;">
+            <div class="title">
+            	<h3>删除提示</h3>
+                <a href="javascript:;" class="pop_closed" onclick="return false;">关闭</a>
+            </div>
+            <div class="content">               
+                <i class="icon1"></i><p class="font-sz">您确定要删除吗？</p>
+            </div>
+            <div class="bottom">
+                <button id="Button2" class="btn1">确定</button>
+                &nbsp;&nbsp;
+                <button id="Button3" class="btn1">取消</button>
+            </div>
+ 		</div>
+ 		<!-- 删除对话框 end -->
+		
+	</body>
+</html>

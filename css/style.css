@@ -1,0 +1,848 @@
+html{
+	display: block;
+}
+
+body{
+	background-color: rgb(230,232,235);
+	font-size: 14px;
+	font-family: "微软雅黑";
+}
+
+.dn{
+	display: none;
+}
+
+#custom-menu{
+	margin-left: 285px;
+	margin-top: 100px;
+	margin-right: 75px;
+	margin-bottom: 150px;
+	height: 1000px;
+	background-color: rgb(255,255,255);
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(231,231,235);
+}
+
+
+/* custom-menu-head
+ -------------------------------------------------------------------------------------------*/
+#custom-menu #custom-menu-head{
+	height: 75px;
+	width: inherit;
+	line-height: 75px;
+	margin: 0px;
+	padding-left: 30px;
+	padding-right: 30px;
+	/*border-width: 1px;
+	border-style: solid;
+	border-color: rgb(231,231,235);*/
+}
+
+#custom-menu #custom-menu-head>p{
+	font-size: 16px;
+	display: inline;
+}
+
+#custom-menu #custom-menu-head>a{
+	margin-left: 760px;
+	display: inline;
+	color: #222;
+}
+
+
+#custom-menu #custom-menu-head #instructions > .icon_instructions{
+	background: url(../img/微信图片.png) 0 -6325px no-repeat;
+	width: 16px;
+    height: 16px;
+    margin-left: 3px;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 100px;
+    text-decoration: none;
+}
+
+#custom-menu #custom-menu-head a:hover{
+	text-decoration: underline;
+}
+
+/* custom-menu-head end!
+ -------------------------------------------------------------------------------------------*/
+
+/* menu_initial_page
+ -------------------------------------------------------------------------------------------*/
+
+#custom-menu-body .menu_initial_page{
+	height: 1000px;
+	text-align: center;
+    background: transparent url(../img/menu-initial.png) no-repeat 0 0;
+    background-position: 150px 100px;
+    padding: 280px 0 0px 220px;/*上右下左*/
+    /*min-height: 300px;*/
+}
+
+.tips_for_add_menu{
+	color: #8d8d8d;
+}
+
+.btn_for_add_menu{
+	background-color: rgb(68,181,73);
+	border-radius: 2px;
+	height: 30px;
+	line-height: 30px;
+	width: 120px;
+	color: white;
+	display: inline-block;
+}
+
+.btn_for_add_menu:hover{
+	background-color: rgb(47,152,51);
+	text-decoration: none;
+	color: white;
+	/*display: inline;*/
+}
+
+.icon_for_btn_add_menu{
+	background: transparent url(../img/微信图片.png) no-repeat 0 -3614px ;
+	width: 14px;
+    height: 14px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-top: -2px;
+}
+
+/* menu_initial_page end!
+ -------------------------------------------------------------------------------------------*/
+
+/* menu_setting_page
+ -------------------------------------------------------------------------------------------*/
+
+.menu_setting_page{
+	display: block;
+}
+
+/* menu_setting_page-->menu_body_status_box */
+.menu_body_status_box{
+	background-color: rgb(244,245,249);
+	height: 75px;
+	line-height: 1.6;
+	width: inherit;
+	margin: 0px;
+	margin-bottom: 40px;
+	padding: 14px 30px;
+	border-top: 1px solid rgb(231,231,235);
+	display: block;
+	overflow:hidden;
+
+}
+
+/*蓝色圆形图片*/
+.menu_body_status_box .icon_for_menustatus-1{
+	background: url(../img/微信图片.png) 0 -1212px no-repeat;
+	width: 32px;
+    height: 32px;
+    margin-top: 5px;
+    margin-right: 15px;
+    vertical-align: middle;
+    display: inline-block;
+    float: left;
+}
+
+.menu_body_status_box .menustatus_title{
+	overflow: hidden;
+	margin: 0;
+}
+
+.menu_body_status_box .status_details{
+	overflow: hidden;
+	margin: 0;
+	color: #8d8d8d;
+}
+
+.menu_body_status_box .status_details>a{
+	color: rgb(69,154,233);
+}
+/* menu_setting_page-->menu_body_status_box end! */
+
+/* menu_setting_page-->menu_setting_area */
+.menu_setting_area{
+	padding-left: 30px;
+	padding-right: 30px;
+	display: block;
+}
+
+/* menu_setting_page-->menu_setting_area-->menu_preview_area（左） */
+.menu_setting_area .menu_preview_area{
+	width: 319px;
+	height: 582px;
+	display: block;
+	float: left;
+	margin-right: 12px;
+	
+}
+
+.menu_setting_area .menu_preview_area .menu_preview{
+	width: 317px;
+    height: 580px;
+    margin-bottom: 40px;
+	background: transparent url(../img/mobile_head.png) 0 0 no-repeat;
+	background-position: 0 0;
+	display: block;
+	border: 1px solid #e7e7eb;
+	position: relative;	
+	padding-bottom: 0;
+}
+
+.menu_setting_area .menu_preview_area .menu_preview .munu_preview_head{
+	color: white;
+	text-align: center;
+	margin-top: 33px;
+}
+
+.menu_setting_area .menu_preview_area .menu_preview .menu_preview_body{
+	display: block;
+}
+
+.menu_preview_body >ul{
+	display: block;
+	list-style-type: none;
+}
+
+/*左侧手机下边的菜单栏*/
+.menu_setting_area .menu_preview_area .menu_preview .menu_preview_body .bottom_menu_list{
+	height: 51px;
+	width: 315px;
+	border: none;
+	border-top: 1px solid rgb(231,231,235);
+	background: transparent url(../img/menu_list.png) no-repeat 0 0;
+	background-position: 0 0;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0px;
+	margin-bottom: 0;
+	padding-left: 43px;
+	position: absolute;
+}
+
+.menu_preview_body >ul >li{
+	display: list-item; /*list-item是li的默认样式*/
+	border: none;
+	height: 50px;
+	line-height: 50px;
+	padding: 0;
+	margin: 0;
+	list-style:none;
+	text-decoration: none;
+	position: relative;
+	float: left;
+}
+.bottom_menu_list .menu_item_size1{
+	width: 100%;
+}
+.bottom_menu_list .menu_item_size2{
+	width: 50%;
+}
+
+.bottom_menu_list .menu_item_size3{
+	width: 33.33%;
+}
+
+.menu_preview_body ul li a{
+	display: block;
+    width: auto;   
+    overflow: hidden;
+    text-overflow: ellipsis;/*文本溢出时剪除的部分用省略号代替*/
+    white-space: nowrap;/*段落中的文本不换行*/
+    word-wrap: normal;
+    color: #616161;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-left: 1px solid #e7e7eb;
+}
+
+.menu_preview_body >ul >li>a:hover{
+	color: black;
+}
+
+
+.select .menu_item{
+    border: 1px solid rgb(68,181,73);
+    line-height: 48px;
+    background-color: white;
+    color: rgb(68,181,73);
+}
+
+.select .menu_item:hover{
+    border: 1px solid rgb(68,181,73);
+    line-height: 48px;
+    background-color: white;
+    color: rgb(68,181,73);	
+}
+
+.sub_menu_small_icon{
+	background: transparent url(../img/photo1.png) no-repeat 0 -48px;
+	height: 7px;
+	width: 7px;
+	vertical-align: middle;
+	display: none;
+    margin-right: 2px;
+    margin-top: -2px;
+}
+
+.menu_item_add_icon, .sub_menu_item_add_icon{
+	background: url(../img/photo1.png) 0 0 no-repeat;
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-top: -2px;
+}
+
+#green_add_icon{
+	background: url(../img/photo1.png) 0 -24px no-repeat;
+}
+
+.sub_menu_display{
+	display: none;
+	border: 1px solid rgb(231,231,235);
+	border-top-width: 0;
+}
+
+
+
+.current .sub_menu_display{
+	display: block;
+	position: absolute;
+	bottom: 60px;
+	width: 100%;
+	background-color: #fafafa;
+}
+
+
+
+.sub_menu_display ul{
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+.sub_menu_display ul li{	
+	border: 1px solid rgb(231,231,235);
+	list-style: none;
+	margin: 0 -1px -1px;
+}
+
+
+
+.sub_menu_display ul li a{
+	border: none;
+	padding: 0 .5em;
+}
+
+.sub_menu_display ul li:hover{
+	background-color: #eee;
+    border: 1px solid #d0d0d0;
+    cursor: pointer;
+}
+
+
+.sub_menu_display ul li.current{
+	background-color: #fff;
+    border: 1px solid #44b549;
+    position: relative;
+    /*z-index: 1;*/
+}
+
+
+.sort_icon{
+	background: transparent url(../img/微信图片.png) 0 -5809px no-repeat;
+	width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    display: none;
+    line-height: 100px;
+    overflow: hidden;
+}
+
+.p-style{
+	margin: 0;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.sort_btn_group{
+	text-align: center;	
+}
+
+.btn {
+    min-width: 60px;
+}
+
+.sort_btn_group a{
+	padding: 0;
+	margin: 0;
+    height: 32px;
+    line-height: 32px;
+}
+
+.btn_disabled,.btn_default{
+	width: 106px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.btn_disabled{
+	border-color: rgb(218,219,224);
+	border-width: 1px;
+	border-style: solid;
+	color: #a5a6aa; 
+	cursor: default;
+	background-color: #e7e7eb;
+}
+
+.btn_disabled:hover{
+	color: #a5a6aa; 
+}
+
+.btn_default{
+	background-color: white;
+	border: 1px solid;
+    border-color: #e7e7eb;
+    color: #222;
+}
+
+.btn_default:hover{
+	background-color: rgb(231,231,235);
+}
+
+
+/* menu_setting_page-->menu_setting_area-->menu_preview_area（左） end! */
+
+/* menu_setting_page-->menu_setting_area-->menu_form_area（右） */
+.menu_form_area{
+	width: 598px;
+	height: 580px;
+	margin-left: 328px;
+	margin-bottom: 40px;
+	display: block;
+}
+
+.tips_for_sort{
+	line-height: 580px;
+	display: block;
+	color: #8d8d8d;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.edit_box{
+	padding-left: 12px;
+	position: relative;
+}
+
+.edit_box_square{
+	padding-left: 20px;
+	padding-right: 20px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgb(231,231,235);
+	background-color: rgb(244,245,249);
+	width: 586px;
+	height: 580px;
+}
+
+.edit_box_square .edit_box_square_title{
+	margin: 0 auto;
+	padding: 0;
+	text-align: left;
+	height: 41px;
+	line-height: 41px;
+	width: 544px;
+	border-bottom: 1px solid rgb(231,231,235);
+}
+
+.edit_box_square_title{
+	position: relative;
+}
+
+.edit_box_square_title a{
+	position: absolute;
+	right: 0px;
+	color: rgb(69,154,233);
+}
+
+.only_menu_name{
+	margin-top: 10px;
+	color: #8d8d8d;
+	display: none;
+}
+
+.not_only_menu_name{
+	display: none;
+}
+
+.menu_name{
+	margin-top: 30px;
+	color: black;
+	font-weight: normal;
+}
+
+.menu_title_label,.menu_content_label{
+	padding-top: 5px;
+	float: left;
+	font-weight: normal;
+}
+
+.tips1_for_menu_title,.tips2_for_menu_title,.tips3_for_menu_title{
+	margin: 0;
+	padding-top: 5px;
+	color: #8d8d8d;
+}
+
+.tips2_for_menu_title,.tips3_for_menu_title{
+	color: #e15f63;
+	display: none;
+}
+
+.menu_name_content{
+	margin-left: 100px;
+}
+
+.menu_content{
+	margin-top: 30px;
+}
+
+.input_menu_name{
+	padding-left: 5px;
+	padding-right: 5px;
+	width: 300px;
+	height: 32px;
+	outline: none;
+}
+
+.sendMsg_or_jumpPage{
+	margin-left: 100px;
+	/*display: table-cell;*/
+    vertical-align: top;
+    float: none;
+    width: auto;
+}
+
+.menu_content_label{
+	padding-top: 0;
+	float: left;
+	font-weight: normal;
+}
+
+.radio_icon{
+	background: url(../img/微信图片.png) 0 -182px no-repeat;
+	width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.sendMsg,.jumpPage{
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.sendMsg.selected .radio_icon,.jumpPage.selected .radio_icon{
+	background: url(../img/微信图片.png) 0 -208px no-repeat;
+}
+
+.sendMsg_label,.jumpPage_label{
+	font-weight: normal;
+	display: inline-block;
+}
+
+input[type="radio"]{
+	box-sizing: border-box;
+	padding: 0;
+}
+
+.frm_radio{
+	position: absolute;
+	left: -999em;
+}
+
+.menu_content_container{
+	margin-top: 8px;
+	display: block;
+}
+
+.menu_content_sendMsg{
+	display: none;
+}
+
+.sendMsg_square{
+	border: 1px solid #e7e7eb;
+	width: 544px;
+	height: 257px;
+	background-color: white;
+}
+
+.sendMsg_head{
+	height: 39px;
+	border-bottom: 1px solid #e7e7eb;
+
+}
+
+.sendMsg_head ul{
+	display: block;
+	list-style-type: none;
+	text-align: left;
+	padding-left: 0;
+}
+
+.sendMsg_nav{
+	line-height: 38px;
+    height: 38px;
+	display: inline-block;
+}
+
+.sendMsg_head ul li{
+	display: inline;
+	list-style: none;
+	margin-left: 0;
+	padding: 0;
+	border: none;
+}
+
+.sendMsg_head ul li a{
+	color: #8d8d8d;
+	padding-left: 20px;
+	padding-right: 20px;
+	outline: 0;
+}
+
+.sendMsg_head ul li a:hover{
+	color: #8d8d8d;
+	text-decoration: none;
+}
+
+.sendMsg_head ul li.selected a{
+	color: black;
+}
+
+.sendMsg_icon1,.sendMsg_icon2,.sendMsg_icon3,.sendMsg_icon4{
+    width: 20px;
+    height: 20px;
+    margin-right: 3px;
+    margin-top: -2px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.sendMsg_icon1{
+	background: transparent url(../img/msg_tab.png) 0 -240px no-repeat;
+}
+
+.sendMsg_head ul li.selected .sendMsg_icon1,.sendMsg_head ul li:hover .sendMsg_icon1{
+	background: transparent url(../img/msg_tab.png) 0 -270px no-repeat;
+}
+
+.sendMsg_icon2{
+	background: transparent url(../img/msg_tab.png) 0 -60px no-repeat;
+}
+
+.sendMsg_head ul li.selected .sendMsg_icon2,.sendMsg_head ul li:hover .sendMsg_icon2{
+	background: transparent url(../img/msg_tab.png) 0 -90px no-repeat;
+}
+
+.sendMsg_icon3{
+	background: transparent url(../img/msg_tab.png) 0 -180px no-repeat;
+}
+
+.sendMsg_head ul li.selected .sendMsg_icon3,.sendMsg_head ul li:hover .sendMsg_icon3{
+	background: transparent url(../img/msg_tab.png) 0 -210px no-repeat;
+}
+
+.sendMsg_icon4{
+	background: transparent url(../img/msg_tab.png) 0 -120px no-repeat;
+}
+
+.sendMsg_head ul li.selected .sendMsg_icon4,.sendMsg_head ul li:hover .sendMsg_icon4{
+	background: transparent url(../img/msg_tab.png) 0 -150px no-repeat;
+}
+
+.menu_content_jumpPage{
+	border: 1px solid #e7e7eb;
+	background-color: #fff;
+    padding: 16px 20px;
+    height: 250px;
+    display: none;
+}
+
+.tips_for_jumpPage{
+	color: #8d8d8d;
+}
+
+.edit_box_arrow_wrap{
+	position: absolute;
+	top: 545px;
+    left: 0;
+}
+
+.edit_box_arrow{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-width: 12px;
+    border-style: dashed;
+    border-color: transparent;
+    border-left-width: 0;
+    border-right-color: #e7e7eb;
+    border-right-style: solid;
+}
+
+.edit_box_arrow_out{
+	position: absolute;
+	left: 0;
+}
+
+.edit_box_arrow_in{
+	position: absolute;
+	left: 1px;
+	border-right-color: rgb(244,245,249);
+}
+
+/* menu_setting_page-->menu_setting_area-->menu_form_area（右） end! */
+
+/* menu_setting_page-->menu_setting_area-->btn_group_for_publish */
+.btn_group_for_publish{
+	text-align: left;
+	margin-left: 340px;
+}
+
+.btn_group_for_publish button{
+	height: 32px;
+	margin-right: 15px;
+}
+
+button[id="save_and_publish"]{
+	background-color: rgb(68,181,73);
+	color: white;
+}
+
+button[id="save_and_publish"]:hover{
+	background-color: rgb(47,152,51);
+	color: white;
+}
+
+
+/* menu_setting_page-->menu_setting_area-->btn_group_for_publish end! */
+
+/* menu_setting_page-->menu_setting_area end! */
+
+/* menu_setting_page end!
+ -------------------------------------------------------------------------------------------*/
+
+.dialog{
+   	background-color: white;
+   	position:fixed;
+   	width:560px;	
+   	z-index: 101;
+   	display:none;
+} 
+.dialog .title{
+    position: relative;
+    margin: 0;
+    display: block;
+    height: 52px;
+    background-color: #f4f5f9;
+    padding: 0 20px;
+    border-bottom: 1px solid #e7e7eb;
+    text-align: left;
+}
+.dialog .title h3{
+    margin: 0;
+    position: absolute;
+    line-height: 52px;
+    font-weight: normal;
+    font-style: normal;
+    color: black;
+}
+.pop_closed{
+	background: url(../img/微信图片.png) 0 -2833px no-repeat;
+	position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    right: 20px;
+    width: 16px;
+    height: 16px;
+    line-height: 999em;
+    overflow: hidden;
+}
+
+.pop_closed:hover{
+	background-position-y: -2859px;
+}
+.dialog .content{
+	text-align: left;
+	padding:10px;
+	height:auto;
+	margin: 20px;
+	display: block;
+}
+
+.icon1{
+	display: inline-block;
+    margin-right: 15px;
+    float: left;
+	width: 32px;
+    height: 32px;
+	background: url(../img/微信图片.png) 0px -1212px no-repeat;
+}
+
+.font-sz{
+	margin: 0;
+	margin-top: 3.5px;
+	font-family: "微软雅黑";
+	font-size: 18px;
+}
+.dialog .bottom{
+	text-align: center;
+   	padding: 16px 0;
+    background-color: #f4f5f9;
+}
+.mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: alpha(opacity = 75);
+    -moz-opacity: .75;
+    -khtml-opacity: .75;
+    opacity: .75;
+    background-color: #000;
+    z-index: 100;
+}       
+.btn1 {
+	width: auto;
+   	display: inline;
+   	margin: 0;
+   	padding: 9px 40px;
+   	height: 40px;
+   	/*line-height: 40px;*/
+   	transition: .3s;
+   	border: none;
+   	border-radius: 0px;
+   	font-size: 16px;
+   	background-color: #008BEA;
+   	color: white;
+   	text-decoration: none;
+    filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#ffffff, EndColorStr=#ECE9D8);
+}
+    
+.btn1:hover{
+    text-decoration: none;	
+    color: white;
+    opacity: 0.8;   	
+}
